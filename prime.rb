@@ -1,10 +1,9 @@
-def prime?(numbers)
-  numbers.even? do |number|
-    if number[0...-1].prime?
-      true
-    else
-      false
-  end
-end
-  return numbers
+def prime?(num)
+   if num <= 1
+    false
+   elsif (2..num-1).none? {|division| num % division == 0}
+    true
+   else
+    false
+   end
 end
