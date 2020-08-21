@@ -1,5 +1,5 @@
 def prime?(numbers)
-  numbers.all? do |number|
+  numbers.even? do |number|
     if number.prime?
       true
     else
